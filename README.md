@@ -11,7 +11,7 @@ The platform integrates user authentication and stores scores using modern backe
 
 🌐 **Live Demo**
 
-[GameHub](https://federico-projects.github.io/GameHub/)
+[GameHub](https://federico-lin26.github.io/GameHub/)
 
 ---
 
