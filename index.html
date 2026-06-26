@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title >Lillo</title>
-  <link rel="stylesheet" href="css/homepage.css">
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Baloo+2&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <title>Lillo</title>
 
+  <link rel="stylesheet" href="assets/css/homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
+
 <body>
   <div class="page-wrapper">
-    <!-- Header -->
+
     <header>
       <div class="header-container">
         <div class="left-header">
           <h1>LILLO</h1>
+
           <nav>
             <ul>
               <li><a href="#">Home</a></li>
@@ -29,31 +30,71 @@
         <div class="right-header">
           <span id="display-username"></span>
           <a href="sign-in.html" id="signin-link">Sign Up / Sign In</a>
-          <a id="signout-btn" style="display:none;">Sign Out</a>    
+          <a id="signout-btn" style="display:none;">Sign Out</a>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-      <section>
-        <h2>Online Games – Play, Think, Learn!</h2>
-        <p>Online Players: N/A</p>
-        <div class="games">
-          <a class="game-card" href="games/Memory Game/index.html">
-            <img src="assets/images/memory.png" alt="Memory Game">
-            <p>Memory Game</p>
-          </a>
-
-          <a class="game-card" href="games/Spin the Wheel/index.html">
-            <img src="assets/images/wheel.png" alt="Spin the Wheel">
-            <p>Spin the Wheel</p>
-          </a>
-        </div>
+    <main class="attic-room">
+      <section class="room-intro">
+        <p class="hero-text">Some objects in the room hide a little game.</p>
       </section>
+
+      <div class="back-wall"></div>
+
+      <div class="roof roof-left"></div>
+      <div class="roof roof-right"></div>
+      <div class="top-beam"></div>
+      <div class="center-window"></div>
+
+      <div class="left-shelf">
+        <div class="shelf-book book-one"></div>
+        <div class="shelf-book book-two"></div>
+        <div class="shelf-box"></div>
+      </div>
+
+      <div class="right-shelf">
+        <div class="shelf-cube"></div>
+        <div class="shelf-round"></div>
+        <div class="shelf-book book-three"></div>
+      </div>
+
+      <a class="game-object memory-box" href="games/Memory Game/index.html" aria-label="Play Memory Game">
+        <div class="memory-lid">
+          <span>MEMORY</span>
+        </div>
+        <div class="object-label">
+          <span>Boardgame Box</span>
+          <strong>Memory Game</strong>
+        </div>
+      </a>
+
+      <a class="game-object wheel-game" href="games/Spin the Wheel/index.html" aria-label="Play Spin the Wheel">
+        <div class="mini-wheel">
+          <div class="wheel-center"></div>
+        </div>
+        <div class="object-label">
+          <span>Prize Wheel</span>
+          <strong>Spin the Wheel</strong>
+        </div>
+      </a>
+
+      <a class="game-object magic-box" href="games/Target Switch/index.html" aria-label="Play Target Switch">
+        <div class="magic-lid"></div>
+        <div class="magic-symbol">★</div>
+        <div class="object-label">
+          <span>Mystery Box</span>
+          <strong>Target Switch</strong>
+        </div>
+      </a>
+
+      <div class="floor"></div>
+      <div class="rug"></div>
+      <div class="floor-box box-one"></div>
+      <div class="floor-box box-two"></div>
+      <div class="floor-box box-three"></div>
     </main>
 
-    <!-- Footer -->
     <footer>
       <nav>
         <ul class="ending-nav">
@@ -62,11 +103,11 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <p>&copy; 2025 Lillo </p>
+      <p>&copy; 2025 Lillo</p>
     </footer>
+
   </div>
 
-  <!-- JS to handle auth display -->
-  <script type="module" src="js/home-auth.js"></script>
+  <script type="module" src="assets/js/home-auth.js"></script>
 </body>
 </html>
